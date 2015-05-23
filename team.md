@@ -17,3 +17,4 @@ permalink: /team/
 + [Tim Blechmann](http://tim.klingt.org/)
 + [Amelie Hinrichsen](http://ameliehinrichsen.de/)
 + [Dominik Hildebrand Marques Lopes](http://www.himalo.de/)
++ [Tijs Ham](http://http://tapage-sound.com/)
