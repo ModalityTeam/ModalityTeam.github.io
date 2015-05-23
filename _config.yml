@@ -1,0 +1,12 @@
+# Site settings
+title: Modality Toolkit
+description: > 
+   A SuperCollider toolkit to simplify the creation of personal (electronic) 
+   instruments utilising hardware and software controllers of any kind.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://modality.bek.no" # the base hostname & protocol for your site
+twitter_username: ModalityTeam
+github_username:  ModalityTeam
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,30 @@
+---
+layout: page
+title: Supported Controllers
+permalink: /controllers/
+---
+
+  <!-- <ul class="post-list"> -->
+Controllers currently supported within the Modality toolkit. Your controller is not in the list?
+Just make a description by yourself and contact the Modality Team if want to share what you made. 
+  <ul>
+
+{% capture posts %}
+  {% for post in site.posts %}
+    |{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}
+  {% endfor %}
+{% endcapture %}
+{% assign sortedposts = posts | split: '|' | sort %}
+{% for post in sortedposts %}
+    {% assign postitems = post | split: '#' %}
+    <li><a href="{{ postitems[1] }}">{{ postitems[2] }}</a></li>
+{% endfor %}
+</ul>
+
+<!--     {% for post in {{ site.posts | sort: 'title' }} %}
+      <li>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+ -->

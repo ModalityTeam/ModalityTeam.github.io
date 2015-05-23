@@ -1,0 +1,40 @@
+---
+layout: default
+---
+
+{% comment %} Image {% endcomment %}
+{% if page.imageType %} 
+<a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title }}.{{ page.imageType }}"><img width="110px" align="right" src="/img/controllers/{{ page.title }}.{{ page.imageType }}" /></a>
+{% endif %}
+
+<h2 class="content">{{page.title}} 
+{% if page.type %} 
+({{ page.type }})
+{% endif %}
+</h2> 
+
+
+{% comment %} Links {% endcomment %}
+{% if page.vendorUrl %} | <a href= "{{ page.vendorUrl }}">  Vendor</a>  {% endif %}
+{% if page.vendorUrl || page.manual %} | {% endif %}
+{% if page.manual %} <a href= "{{ page.manual }}">Manual |</a> {% endif %}
+
+{% if page.description %} 
+{{ page.description | markdownify }}
+{% endif %}
+
+{% if page.notes %} 
+<em>{{ page.notes | markdownify }}</em>
+{% endif %}
+
+{% if page.hwInterface %} 
+<h3>Protocol</h3>
+<ul><li>{{ page.hwInterface }}</li></ul> 
+{% endif %}
+{% if page.features %} 
+<h3>Features</h3>
+{{ page.features | markdownify }}
+{% endif %}
+
+
+{{ content }}

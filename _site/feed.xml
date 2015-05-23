@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modality Toolkit</title>
+    <description>A SuperCollider toolkit to simplify the creation of personal (electronic)  instruments utilising hardware and software controllers of any kind.
+</description>
+    <link>http://modality.bek.no/</link>
+    <atom:link href="http://modality.bek.no/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 23 May 2015 14:49:48 +0200</pubDate>
+    <lastBuildDate>Sat, 23 May 2015 14:49:48 +0200</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>Triggerfinger</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/triggerfinger.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/triggerfinger.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Korg nanoPAD2</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/nanoPAD2.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/nanoPAD2.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Korg nanoKONTROL2</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/nanoKONTROL2.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/nanoKONTROL2.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Korg nanoKONTROL</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/nanoKONTROL.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/nanoKONTROL.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Korg nanoKEY2</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/nanoKEY2.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/nanoKEY2.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Korg microKEY</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/microKEY.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/microKEY.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Snyderphonics Manta</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/manta.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/manta.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Impact_gamepad</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/impact_gamepad.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/impact_gamepad.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>GyrOSC</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/gyrosc.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/gyrosc.html</guid>
+        
+        
+      </item>
+    
+      <item>
+        <title>Xosc</title>
+        <description>
+</description>
+        <pubDate>Fri, 22 May 2015 00:00:00 +0200</pubDate>
+        <link>http://modality.bek.no/2015/05/22/XOsc.html</link>
+        <guid isPermaLink="true">http://modality.bek.no/2015/05/22/XOsc.html</guid>
+        
+        
+      </item>
+    
+  </channel>
+</rss>
