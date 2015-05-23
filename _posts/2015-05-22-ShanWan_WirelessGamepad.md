@@ -1,5 +1,7 @@
 ---
 layout: controllers
-image: LaunchPadXL.jpg
+descFile: ShanWan_WirelessGamepad
+title: ShanWan Wireless
+type: gamepad
 ---
 

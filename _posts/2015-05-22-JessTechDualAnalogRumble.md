@@ -1,5 +1,9 @@
 ---
 layout: controllers
-image: LaunchPadXL.jpg
+title: JessTech Dual Analog Rumble
+descFile: JessTechDualAnalogRumble
+type: gamepad
+hwInterface: HID
 ---
+
 

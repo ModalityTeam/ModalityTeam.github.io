@@ -1,5 +1,9 @@
 ---
 layout: controllers
-image: LaunchPadXL.jpg
+title: Thrustmaster MegaWorldectronics
+imageType: png
+hwInterface: usb, HID
+descFile: ThrustmasterJoystick
+type: joystick
 ---
 

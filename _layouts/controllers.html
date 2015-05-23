@@ -17,7 +17,8 @@ layout: default
 {% comment %} Links {% endcomment %}
 {% if page.vendorUrl %} | <a href= "{{ page.vendorUrl }}">  Vendor</a>  {% endif %}
 {% if page.vendorUrl || page.manual %} | {% endif %}
-{% if page.manual %} <a href= "{{ page.manual }}">Manual |</a> {% endif %}
+{% if page.manual %} <a href= "{{ page.manual }}">Manual</a> | {% endif %}
+{% if page.descFile %} <a href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.descFile }}.desc.scd">Description File</a> | {% endif %} 
 
 {% if page.description %} 
 {{ page.description | markdownify }}

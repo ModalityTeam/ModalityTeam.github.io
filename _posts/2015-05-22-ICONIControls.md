@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: icon iCONTROLS
+descFile: ICONIControls
 imageType: jpg
 type: faders
 hwInterface: usb, MIDI, HID

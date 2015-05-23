@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: EOWave Ribbon
+descFile: EOWave_Ribbon
 imageType: jpg
 hwInterface: usb, MIDI
 vendorUrl: http://www.eowave.com/instruments.php?prod=78

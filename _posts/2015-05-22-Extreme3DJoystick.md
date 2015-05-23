@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: EXTREME 3d pro
+descFile: Extreme3DJoystick
 imageType: jpg
 hwInterface: usb, HID
 type: joystick

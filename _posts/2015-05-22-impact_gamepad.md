@@ -1,5 +1,9 @@
 ---
 layout: controllers
-image: LaunchPadXL.jpg
+title: impact gamepad
+descFile: impact_gamepad
+type: gamepad
+hwInterface: HID
 ---
+
 

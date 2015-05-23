@@ -6,6 +6,7 @@ hwInterface: usb, MIDI
 vendorUrl: https://www.ableton.com/en/push/
 manual: https://www.ableton.com/en/manual/using-push/
 type: pad controller
+descFile: AbletonPush
 description: |
     Official Ableton Live controller.
 features: |

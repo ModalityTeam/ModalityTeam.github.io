@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: icon iStage 
+descFile: ICONIStage
 imageType: jpg
 type: launchbuttons
 hwInterface: usb, MIDI

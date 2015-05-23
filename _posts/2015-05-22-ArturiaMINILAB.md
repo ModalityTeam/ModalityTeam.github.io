@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: Arturia miniLab
+descFile: ArturiaMINILAB
 imageType: jpg
 vendorUrl: http://www.arturia.com/products/hybrid-synths/minilab/overview
 manual: http://downloads.arturia.com/products/minilab/manual/MiniLab_Manual_EN.pdf

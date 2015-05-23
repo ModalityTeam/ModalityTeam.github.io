@@ -1,6 +1,7 @@
 ---
 layout: controllers
 title: Numark Orbit
+descFile: NumarkOrbit
 imageType: jpg
 type: buttons, rotary
 vendorUrl: http://www.numark.com/product/orbit

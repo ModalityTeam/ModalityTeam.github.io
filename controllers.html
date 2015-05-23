@@ -7,7 +7,6 @@ permalink: /controllers/
   <!-- <ul class="post-list"> -->
 Controllers currently supported within the Modality toolkit. Your controller is not in the list?
 Just make a description by yourself and contact the Modality Team if want to share what you made. 
-  <ul>
 
 {% capture posts %}
   {% for post in site.posts %}
@@ -15,6 +14,7 @@ Just make a description by yourself and contact the Modality Team if want to sha
   {% endfor %}
 {% endcapture %}
 {% assign sortedposts = posts | split: '|' | sort %}
+<ul class="controllers">
 {% for post in sortedposts %}
     {% assign postitems = post | split: '#' %}
     <li><a href="{{ postitems[1] }}">{{ postitems[2] }}</a></li>
