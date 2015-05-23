@@ -1,6 +1,26 @@
 ---
 layout: default
 ---
+<div align="right">
+{% capture posts %}{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}{% endcapture %}
+{% assign sortedposts = posts | split: '|' | sort %}
+
+{% for me in sortedposts %}
+    {% assign postitems = me | split: '#' %}
+	{% if postitems[2] == page.title %}
+        {% unless forloop.first %}
+            {% assign prevItems = prev | split: '#' %}
+			<a rel="next" href="{{ prevItems[1] }}"> &larr;</a>
+        {% endunless %}
+        {% unless forloop.last %}
+            {% assign next = sortedposts[forloop.index] %}
+            {% assign prevItems = next | split: '#' %}
+       		<a rel="prev" href="{{ prevItems[1] }}">&rarr;</a>
+        {% endunless %}
+	{% endif %}
+    {% assign prev = me %}
+{% endfor%}	
+</div>
 
 {% comment %} Image {% endcomment %}
 {% if page.imageType %} 
