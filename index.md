@@ -7,19 +7,19 @@ The Modality Toolkit simplifies creation of highly personalised electronic instr
 
 ## How does it work?
 
-<pre>
+{% highlight text %}
 MKtl.find; // explore what's available
-</pre>
+{% endhighlight %}
 
 Access a [nanoKontrol2](2015/05/22/nanoKONTROL2.html):
-<pre>
+{% highlight text %}
 k = MKtl('nnkn20'); // short name indicates NanoControl2
-</pre>
+{% endhighlight %}
 
 Assign an action to the first knob:
-<pre>
-k.elementAt(\kn, 0).action = { |el| el.value }; 
-</pre>
+{% highlight text %}
+k.elementAt(\kn, 0).action = { |el| el.value.postln }; 
+{% endhighlight %}
 
 Have a different controller? Just [look](controllers) if your device is one of the {{site.posts | size}} [supported ones](controllers).
 

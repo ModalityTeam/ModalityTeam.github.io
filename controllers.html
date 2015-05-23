@@ -4,9 +4,9 @@ title: Supported Controllers
 permalink: /controllers/
 ---
 
-  <!-- <ul class="post-list"> -->
-Controllers currently supported within the Modality toolkit. Your controller is not in the list?
-Just make a description by yourself and contact the Modality Team if want to share what you made. 
+<h2>Supported Controllers</h2>
+
+There are currently  {{ site.posts | size }} controllers supported within the Modality toolkit.
 
 {% capture posts %}
   {% for post in site.posts %}
@@ -21,10 +21,12 @@ Just make a description by yourself and contact the Modality Team if want to sha
 {% endfor %}
 </ul>
 
-<!--     {% for post in {{ site.posts | sort: 'title' }} %}
-      <li>
-          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
- -->
+<h2>Wanted: new controller descriptions</h2>
+
+Your controller is missing?
+Write a description yourself and contact the Modality Team to share what you made. 
+It is easy, get started with
+
+{% highlight text %}
+MKtl('yourcontroller').explore;
+{% endhighlight %}
