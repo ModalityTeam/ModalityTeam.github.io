@@ -19,7 +19,7 @@ There are currently  {{ site.posts | size }} controllers supported within the Mo
 {% for post in site.posts %}
   <div class="grid-item" controller="{{ post.title | downcase }}">
     {% if post.imageType %} 
-    <a href="{{ post.url }}"><img src="/img/controllers/{{ post.title | slugify }}.{{ post.imageType }}" /></a>
+    <a href="{{ post.url }}"><div class="controllerfig"><img class="controllerInGrid" src="/img/controllers/{{ post.title | slugify }}.{{ post.imageType }}" /></div></a>
     {% endif %} 
     <p class="name"><a href="{{ post.url }}">{{ post.title }}</a></p>
   </div>

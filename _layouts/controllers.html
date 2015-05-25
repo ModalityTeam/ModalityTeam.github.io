@@ -24,7 +24,7 @@ layout: default
 </h2>
 <div class="controller-box">
     {% if page.imageType %}
-    <div style="float: right;">
+    <div class="controllerfig" style="float: right;">
         <a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
         <img class="controller" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
         </a>
@@ -63,8 +63,8 @@ layout: default
 
 {{ content }}
 
+</div>
 <p class="editDeclare">
 Something missing? Please <a href="{{ site.github.repository_url }}/edit/master{{ site.branch }}/{{ page.path }}">edit the page on GitHub</a> and send us a pull request!
 </p>
-</div>
 

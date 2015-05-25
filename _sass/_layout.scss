@@ -110,9 +110,15 @@ ul.controllers {
     text-align: right;
 }
 
+.controllerfig {
+    background-color: #FFF;
+    border-width: 5px;
+    border-color: #FFF;
+    border-style: solid; 
+}
 img.controller {
-    max-width:  130px;
-    max-height: 150px;
+    max-width:  200px;
+    max-height: 200px;
     align: none;
 }
 
@@ -127,7 +133,8 @@ img.controller {
         font-size: 80%;
     }
     img {
-        max-heigtht: 100px;
+        max-heigtht: 80px;
+
     }
 }
 
