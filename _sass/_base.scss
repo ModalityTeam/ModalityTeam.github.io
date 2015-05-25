@@ -31,7 +31,7 @@ body {
     -webkit-text-size-adjust: 100%;
     font-feature-settings: "liga=0";
     font-variant-ligatures: no-common-ligatures;
-    letter-spacing: -.1px;
+    letter-spacing: -.01px;
 }
 
 
@@ -169,12 +169,12 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
+    color: lighten($brand-color, 5%);
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
+    // &:visited {
+    //     color: lighten($brand-color, 5%);
+    // }
 
     &:hover {
         color: $text-color;
@@ -200,32 +200,31 @@ blockquote {
     }
 }
 
-
-
 /**
  * Code formatting
  */
 pre,
 code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
     border-radius: 2px;
-    background: #E4713C;
-    background: rgba(255, 255, 255, 0.5);
 }
 
 code {
-    padding: 1px 5px;
+    padding: 10px 2px;
 }
 
 pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
+    padding: 10px 5px;
+    // border: 1px solid $grey-color-light;
+    background: #E4713C;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 2px 2px;
+    // overflow-x: scroll;
 
     > code {
+        font-size: 14px;
         border: 0;
         padding-right: 0;
-        padding-left: 0;
+        padding-left: 10px;
     }
 }
 

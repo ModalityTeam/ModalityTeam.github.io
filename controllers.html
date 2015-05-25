@@ -4,29 +4,51 @@ title: Supported Controllers
 permalink: /controllers/
 ---
 
-<h2>Supported Controllers</h2>
+<script src="/js/isotope.pkgd.js"></script>
+<script src="/js/masonryHorizontal.js"></script>
+<script src="/js/imagesLoaded.pkgd.js"></script>
+<script src="/js/isotopeSetup.js"></script>
 
 There are currently  {{ site.posts | size }} controllers supported within the Modality toolkit.
 
-{% capture posts %}
-  {% for post in site.posts %}
-    |{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}
-  {% endfor %}
+
+<!-- <div class="grid js-isotope"
+  data-isotope-options='{ "itemSelector": ".item", "layoutMode": "masonry", "sortBy": "name", "sortAscending": "true"}, "percentPosition": "false" '>
+ -->
+ <div class="grid">
+{% for post in site.posts %}
+  <div class="grid-item" controller="{{ post.title | downcase }}">
+    {% if post.imageType %} 
+    <a href="{{ post.url }}"><img src="/img/controllers/{{ post.title | slugify }}.{{ post.imageType }}" /></a>
+    {% endif %} 
+    <p class="name"><a href="{{ post.url }}">{{ post.title }}</a></p>
+  </div>
+{% endfor%}
+</div>
+
+
+
+<!-- {% capture posts %}
+{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}
 {% endcapture %}
 {% assign sortedposts = posts | split: '|' | sort %}
 <ul class="controllers">
 {% for post in sortedposts %}
+    {% unless forloop.index <= 1 %}
     {% assign postitems = post | split: '#' %}
     <li><a href="{{ postitems[1] }}">{{ postitems[2] }}</a></li>
+    {% endunless %}
 {% endfor %}
 </ul>
+ -->
 
-<h2>Wanted: new controller descriptions</h2>
+ <h2>Your controller is missing?</h2>
 
-Your controller is missing?
-Write a description yourself and contact the Modality Team to share what you made. 
+Write a description for it and contact the <a href="https://twitter.com/{{ site.twitter_username}}">Modality Team</a> to share what you made. 
 It is easy, get started with
 
 {% highlight text %}
 MKtl('yourcontroller').explore;
 {% endhighlight %}
+
+Alternatively, you may consider donating a controller to the [Modality Team](https://twitter.com/{{ site.twitter_username }}), we'll be glad to write a description file for it.

@@ -89,7 +89,41 @@
 }
 
 ul.controllers {
-        list-style: none; 
+        list-style: circle; 
+}
+
+.controller-box {
+    background-color: #F8DCC8;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    min-height: 250px;
+}
+
+.controllerDescription {
+    list-style: none;
+    margin-top: -10px;
+    margin-left: -10px;
+}
+
+img.controller {
+    max-width:  130px;
+    max-height: 150px;
+    align: none;
+}
+
+.grid-item { 
+    width: 20%;
+    background-color: #F8DCC8;
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    .name {
+        font-size: 80%;
+    }
+    img {
+        max-heigtht: 100px;
+    }
 }
 
 ul.nav {

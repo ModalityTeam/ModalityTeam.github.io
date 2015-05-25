@@ -1,67 +1,71 @@
 ---
 layout: default
 ---
-{% capture posts %}{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}{% endcapture %}
-{% assign sortedposts = posts | split: '|' | sort %}
-
-
-
+{% capture posts %}{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}{% endcapture %}{% assign sortedposts = posts | split: '|' | sort %}
 <div style="float:right;">
-{% for me in sortedposts %}
+    {% for me in sortedposts %}
     {% assign postitems = me | split: '#' %}
-	{% if postitems[2] == page.title %}
-        {% unless forloop.first -1 %}
-            {% assign prevItems = prev | split: '#' %}
-			<a rel="next" href="{{ prevItems[1] }}"> &larr;</a>
-        {% endunless %}
-        {% unless forloop.last %}
-            {% assign next = sortedposts[forloop.index] %}
-            {% assign prevItems = next | split: '#' %}
-       		<a rel="prev" href="{{ prevItems[1] }}">&rarr;</a>
-        {% endunless %}
-	{% endif %}
+    {% if postitems[2] == page.title  %}
+    {% unless forloop.index <= 2 %}
+    {% assign prevItems = prev | split: '#' %}
+    <a style="text-decoration: none;" rel="next" href="{{ prevItems[1] }}"> &larr;</a>
+    {% endunless %}
+    {% unless forloop.last %}
+    {% assign next = sortedposts[forloop.index] %}
+    {% assign prevItems = next | split: '#' %}
+    <a style="text-decoration: none;" rel="prev" href="{{ prevItems[1] }}">&rarr;</a>
+    {% endunless %}
+    {% endif %}
     {% assign prev = me %}
-{% endfor%}
+    {% endfor%}
 </div>
-
-
 <h2 class="content">
-{{page.title}} 
-</h2> 
+{{page.title}}
+</h2>
+<div class="controller-box">
+    {% if page.imageType %}
+    <div style="float: right;">
+        <a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
+        <img class="controller" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
+        </a>
+    </div>
+    {% endif %}
 
+    {% if page.description %}
+    {{ page.description | markdownify }}
+    {% else %}
+    {{"Description" | markdownify }}
+    {% endif %}
 
-{% if page.type %} 
-({{ page.type }})
-{% endif %}
-
-{% if page.imageType %} 
-<div style="float: right;">
-<a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
-<img width="110px" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
-</a>
-</div>
-{% endif %}
-
-{% if page.vendorUrl %}| <a target="_blank" href= "{{ page.vendorUrl }}">Vendor info</a>  {% endif %}
-{% if page.manual %} (<a target="_blank" href= "{{ page.manual }}">manual</a>) {% endif %}
-| <a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a> |
-
-{% if page.description %} 
-{{ page.description | markdownify }}
-{% endif %}
-
-{% if page.notes %} 
-<em>{{ page.notes | markdownify }}</em>
-{% endif %}
-
-{% if page.hwInterface %} 
-<h3>Protocol</h3>
-<ul><li>{{ page.hwInterface }}</li></ul> 
-{% endif %}
-{% if page.features %} 
-<h3>Features</h3>
-{{ page.features | markdownify }}
-{% endif %}
-
+<ul class="controllerDescription">
+    {% if page.type %}
+    <li><b>Type</b> {{ page.type }}</li>
+    {% endif %}
+    {% if page.hwInterface %}
+    <li><b>Protocol</b> {{ page.hwInterface }}</li>
+    {% endif %}
+    {% if page.vendorUrl %}
+    <li><b><a target="_blank" href= "{{ page.vendorUrl }}">Vendor info</a></b></li>
+    {% endif %}
+    {% if page.manual %}
+    <li><b><a target="_blank" href= "{{ page.manual }}">Manual</a></b></li>
+    {% endif %}
+    <li><b><a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a></b></li>
+    {% if page.features %}
+    <li><b>Features</b>
+    {{ page.features | markdownify }}
+    </li>
+    {% endif %}
+</ul>
+    {% if page.notes %}
+    <em>{{ page.notes | markdownify }}</em>
+    {% endif %}
 
 {{ content }}
+</div>
+
+<p>
+Something missing? Please <a href="{{ site.github.repository_url }}/edit/{{ site.branch }}/{{ page.path }}">
+  edit the page on GitHub
+</a> and send us a pull request!
+</p>
