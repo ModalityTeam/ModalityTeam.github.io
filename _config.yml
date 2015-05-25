@@ -7,6 +7,6 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://modality.bek.no" # the base hostname & protocol for your site
 twitter_username: ModalityTeam
 github_username:  ModalityTeam
-
+permalink: /controllers/:title.html
 # Build settings
 markdown: kramdown
