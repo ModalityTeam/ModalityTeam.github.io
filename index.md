@@ -11,7 +11,7 @@ The Modality Toolkit simplifies creation of highly personalised electronic instr
 MKtl.find; // explore what's available
 {% endhighlight %}
 
-Access a [nanoKontrol2](2015/05/22/nanoKONTROL2.html):
+Access a [nanoKONTROL2]({% post_url 2015-05-22-korg-nanokontrol2 %}):
 {% highlight text %}
 k = MKtl('nnkn20'); // short name indicates NanoControl2
 {% endhighlight %}
