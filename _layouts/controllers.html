@@ -1,14 +1,16 @@
 ---
 layout: default
 ---
-<div align="right">
 {% capture posts %}{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}{% endcapture %}
 {% assign sortedposts = posts | split: '|' | sort %}
 
+
+
+<div style="float:right;">
 {% for me in sortedposts %}
     {% assign postitems = me | split: '#' %}
 	{% if postitems[2] == page.title %}
-        {% unless forloop.first %}
+        {% unless forloop.first -1 %}
             {% assign prevItems = prev | split: '#' %}
 			<a rel="next" href="{{ prevItems[1] }}"> &larr;</a>
         {% endunless %}
@@ -19,26 +21,30 @@ layout: default
         {% endunless %}
 	{% endif %}
     {% assign prev = me %}
-{% endfor%}	
+{% endfor%}
 </div>
 
-{% comment %} Image {% endcomment %}
-{% if page.imageType %} 
-<a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title }}.{{ page.imageType }}"><img width="110px" align="right" src="/img/controllers/{{ page.title }}.{{ page.imageType }}" /></a>
-{% endif %}
 
-<h2 class="content">{{page.title}} 
-{% if page.type %} 
-({{ page.type }})
-{% endif %}
+<h2 class="content">
+{{page.title}} 
 </h2> 
 
 
-{% comment %} Links {% endcomment %}
-{% if page.vendorUrl %} | <a href= "{{ page.vendorUrl }}">  Vendor</a>  {% endif %}
-{% if page.vendorUrl || page.manual %} | {% endif %}
-{% if page.manual %} <a href= "{{ page.manual }}">Manual</a> | {% endif %}
-{% if page.descFile %} <a href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.descFile }}.desc.scd">Description File</a> | {% endif %} 
+{% if page.type %} 
+({{ page.type }})
+{% endif %}
+
+{% if page.imageType %} 
+<div style="float: right;">
+<a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
+<img width="110px" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
+</a>
+</div>
+{% endif %}
+
+{% if page.vendorUrl %}| <a target="_blank" href= "{{ page.vendorUrl }}">Vendor info</a>  {% endif %}
+{% if page.manual %} (<a target="_blank" href= "{{ page.manual }}">manual</a>) {% endif %}
+| <a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a> |
 
 {% if page.description %} 
 {{ page.description | markdownify }}
