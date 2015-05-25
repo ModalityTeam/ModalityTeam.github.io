@@ -2,8 +2,7 @@
 
 $(document).ready( function() {
   // init Isotope after all images have loaded
-  var $grid = $('.grid').imagesLoaded( function() {
-  	$grid.isotope({
+  var $grid = $('.grid').isotope({
   		getSortData: {
     		name: '[controller]', // text from querySelector
 		},
@@ -14,7 +13,10 @@ $(document).ready( function() {
   		masonry: {
   			columnWidth: 50,
   		}
-  	});
+  });
+
+  $grid.imagesLoaded().progress( function() {
+   	$grid.isotope('layout');
   });
 
 });
