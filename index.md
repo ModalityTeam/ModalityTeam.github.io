@@ -32,7 +32,7 @@ It is our belief that integration of such on-the-fly remapping features helps to
 The Modality Toolkit is designed and developed by the ModalityTeam, a group of people harbouring both users and developers of SuperCollider: Marije Baalman, Tim Blechmann, Till Bovermann, Alberto de Campo, Jeff Carey, Bjørnar Habbestad, Tijs Ham, Amelie Hinrichsen, Hannes Hoelzl, Domenik Hildebrand Marques Lopes, Miguel Negrao, and Wouter Snoei.
 
 ## How was this made?
-Meetings and development workshops has been held in Bergen, Amsterdam, London and Copenhagen between 2010 and 2015. The main supporters have been: BEK - Bergen Centre of Electronic Arts, STEIM - Studio for Electro-instrumental Music, Amsterdam, 3DMIN, Berlin and AAU, Copenhagen.
+Meetings and development workshops has been held in Bergen, Amsterdam, London and Copenhagen between 2010 and 2015. The main supporters have been: [BEK - Bergen Centre of Electronic Arts](http://www.bek.no), [STEIM - Studio for Electro-instrumental Music]{http://www.steim.org), Amsterdam, 3DMIN, Berlin and AAU, Copenhagen.
 
 The work has been funded by: Norwegian Arts Council, City of Bergen, KKNord, Nordic Council, [Stimuleringsfonds voor de creatieve industry (Creative Industry Fund NL).](http://stimuleringsfonds.nl/nl/actueel/toekenningen/modality_work_group/)
 
