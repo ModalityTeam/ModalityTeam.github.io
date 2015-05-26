@@ -29,4 +29,4 @@ We want to thank the following funds for contributing to the financing of this p
 + <a target="_blank" href="https://www.bergen.kommune.no/kultur">City of Bergen</a>
 + <a target="_blank" href="http://www.kulturkontaktnord.org/">Kulturkontakt Nord</a>
 + <a target="_blank" href="http://www.nordiskkulturfond.org/">Nordic Council</a>
-+ [Stimuleringsfonds voor de creatieve industry (Creative Industry Fund NL).](http://stimuleringsfonds.nl/nl/actueel/toekenningen/modality_work_group/)
++ <a target="_blank" href="http://stimuleringsfonds.nl/nl/actueel/toekenningen/modality_work_group/">Stimuleringsfonds voor de creatieve industry (Creative Industry Fund NL)</a>
