@@ -17,9 +17,16 @@ BEK works with both artistic and scientific research and development and puts in
 
 We want to thank all associated institutes for their support: 
 
-+ <a target="_blank" href="http://www.steim.org/">STEIM Amsterdam</a>, 
 + <a target="_blank" href="http://bek.no/">BEK Bergen</a>, 
++ <a target="_blank" href="http://www.steim.org/">STEIM Amsterdam</a>, 
 + <a target="_blank" href="http://aau.dk/">AAU Copenhagen</a>, 
-+ <a target="_blank" href="http://www.udk-berlin.de">UdK Berlin</a>,      &amp;
++ <a target="_blank" href="http://www.udk-berlin.de">UdK Berlin</a>,
 + <a target="_blank" href="http://mlab.taik.fi/">Media Lab of the Aalto University Helsinki</a>.
-+ 
+
+We want to thank the following funds for funding this project:
+
++ Norwegian Arts Council
++ City of Bergen
++ KKNord
++ Nordic Council
++ [Stimuleringsfonds voor de creatieve industry (Creative Industry Fund NL).](http://stimuleringsfonds.nl/nl/actueel/toekenningen/modality_work_group/)
