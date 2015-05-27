@@ -8,4 +8,4 @@ type: keyboard, knobs
 notes: Put the OP-1 into control-mode (```shift```-```<COM>```, then ```2```)
 ---
 
-A Voicer example to play it as a keyboard is in the [cookbook](https://github.com/ModalityTeam/ModalityWorkshop/blob/master/cookbook/keyboard/keyboard-NPVoicer.scd)
+An example to play it as a multi-timbral keyboard for your sounds is in the [cookbook](https://github.com/ModalityTeam/ModalityWorkshop/blob/master/cookbook/keyboard/keyboard-NPVoicer.scd).
