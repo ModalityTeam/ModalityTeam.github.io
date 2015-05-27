@@ -23,10 +23,4 @@ We want to thank all associated institutes for their support:
 + <a target="_blank" href="http://www.udk-berlin.de">UdK Berlin</a>,
 + <a target="_blank" href="http://mlab.taik.fi/">Media Lab of the Aalto University Helsinki</a>.
 
-We want to thank the following funds for contributing to the financing of this project:
-
-+ <a target="_blank" href="http://kulturrad.no">Norwegian Arts Council</a>
-+ <a target="_blank" href="https://www.bergen.kommune.no/kultur">City of Bergen</a>
-+ <a target="_blank" href="http://www.kulturkontaktnord.org/">Kulturkontakt Nord</a>
-+ <a target="_blank" href="http://www.nordiskkulturfond.org/">Nordic Council</a>
-+ <a target="_blank" href="http://stimuleringsfonds.nl/nl/actueel/toekenningen/modality_work_group/">Stimuleringsfonds voor de creatieve industry (Creative Industry Fund NL)</a>
+{% include funders.html %}
