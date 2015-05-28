@@ -1,6 +1,8 @@
 ---
 layout: default
 ---
+
+<!-- navigation -->
 {% capture posts %}{% for post in site.posts %}|{{ post.title | downcase }}#{{ post.url }}#{{ post.title }}{% endfor %}{% endcapture %}{% assign sortedposts = posts | split: '|' | sort %}
 <div style="float:right;">
     {% for me in sortedposts %}
@@ -19,13 +21,18 @@ layout: default
     {% assign prev = me %}
     {% endfor%}
 </div>
+
+
 <h2 class="content">
 {{page.title}}
 </h2>
-<div class="controller-box">
+<div class="controller-box" >
+
     {% if page.imageType %}
-    <div class="controllerfig" style="float: right;">
-        <a data-lightbox="controller" data-title="{{ page.title }}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
+    <div class="boxControllerfig">
+        <a data-lightbox="controller" data-title="{{ page.title }} {% if page.hasScribble %}
+        <a target=_blank href=/img/controller.scribble/{{ page.title | slugify }}.fig.pdf>(scribble)</a>
+    {% endif %}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
         <img class="controller" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
         </a>
     </div>
@@ -36,6 +43,7 @@ layout: default
     {% else %}
     {{"Description" | markdownify }}
     {% endif %}
+
 
 <ul class="controllerDescription">
     {% if page.type %}
@@ -51,6 +59,12 @@ layout: default
     <li><b><a target="_blank" href= "{{ page.manual }}">Manual</a></b></li>
     {% endif %}
     <li><b><a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a></b></li>
+    {% if page.hasScribble != null %}
+    <li><b>
+    <a target="_blank" href="/img/controller.scribble/{{ page.title | slugify }}.fig.pdf">
+            Scribble paper (pdf)</a></b>
+    </li>
+    {% endif %}
     {% if page.features %}
     <li><b>Features</b>
     {{ page.features | markdownify }}

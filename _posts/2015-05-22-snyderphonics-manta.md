@@ -3,6 +3,7 @@ layout: controllers
 title: Snyderphonics Manta
 imageType: jpg
 type: pads
+hasScribble: true
 hwInterface: usb, OSC
 vendorUrl: http://www.snyderphonics.com/products.htm
 manual: http://www.snyderphonics.com/documentation.htm
