@@ -5,6 +5,7 @@ vendorUrl: http://www.steinberg.net/en/products/controllers/cmc_series/models/cm
 hwInterface: usb, MIDI
 imageType: jpg
 type: keyboard, knobs
+hasScribble: true
 notes: Put the OP-1 into control-mode (```shift```-```<COM>```, then ```2```)
 ---
 
