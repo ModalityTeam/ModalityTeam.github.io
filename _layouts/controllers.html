@@ -31,7 +31,7 @@ layout: default
     {% if page.imageType %}
     <div class="boxControllerfig">
         <a data-lightbox="controller" data-title="{{ page.title }} {% if page.hasScribble %}
-        <a target=_blank href=/img/controller.scribble/{{ page.title | slugify }}.fig.pdf>(scribble)</a>
+        <a target=_blank href=/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf>(scribble)</a>
     {% endif %}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
         <img class="controller" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
         </a>
@@ -61,7 +61,7 @@ layout: default
     <li><b><a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a></b></li>
     {% if page.hasScribble != null %}
     <li><b>
-    <a target="_blank" href="/img/controller.scribble/{{ page.title | slugify }}.fig.pdf">
+    <a target="_blank" href="/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf">
             Scribble paper (pdf)</a></b>
     </li>
     {% endif %}
