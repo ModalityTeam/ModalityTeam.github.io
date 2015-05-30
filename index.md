@@ -29,9 +29,9 @@ The name Modality arose from the idea of supporting the creation of modal interf
 It is our belief that integration of such on-the-fly remapping features helps to create flexible and powerful instruments allowing for faster changes and a more musical way to control synthesis and processing tasks. In the end we aim for digital instruments that are more fun to play. 
 
 ## Who made this?
-The Modality Toolkit is designed and developed by the ModalityTeam, a group of people harbouring both users and developers of SuperCollider: Marije Baalman, Tim Blechmann, Till Bovermann, Alberto de Campo, Jeff Carey, Bjørnar Habbestad, Tijs Ham, Amelie Hinrichsen, Hannes Hoelzl, Domenik Hildebrand Marques Lopes, Miguel Negrao, and Wouter Snoei.
+The Modality Toolkit is designed and developed by the ModalityTeam, a group of people harbouring both users and developers of SuperCollider. 
 
-## How was this made?
+## How was it made?
 Meetings and development workshops has been held in Bergen, Amsterdam, London and Copenhagen between 2010 and 2015. The main supporters have been: [BEK - Bergen Centre of Electronic Arts](http://www.bek.no), [STEIM - Studio for Electro-instrumental Music](http://www.steim.org), Amsterdam, 3DMIN, Berlin and AAU, Copenhagen.
 
 {% include funders.html %}

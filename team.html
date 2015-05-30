@@ -1,0 +1,56 @@
+---
+layout: page
+title: Team
+permalink: /team/
+---
+
+<script src="/js/isotope.pkgd.js"></script>
+<script src="/js/masonryHorizontal.js"></script>
+<!-- <script src="/js/imagesLoaded.pkgd.js"></script> -->
+
+<script type="text/javascript">
+$(document).ready( function() {
+  // init Isotope after all images have loaded
+  var $grid = $('.teamMembers').isotope({
+        itemSelector: '.teamMember',
+        percentPosition: true,
+        sortBy : 'random',
+        layoutMode: 'vertical',
+        vertical: {
+            horizontalAlignment: 0
+        }
+        // masonry: {
+        //     columnWidth: 50,
+        // }
+  });
+
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+  });
+
+});    
+</script>
+
+
+<div class="team">
+
+{% highlight text %}
+ModalityTeam.members.scramble;
+{% endhighlight %}
+
+<ul class="teamMembers">
+    <li class="teamMember"><a target="_blank" href="http://jeffcarey.foundation-one.org/)">Jeff Carey</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.bek.no/~bjornar/">Bjørnar Habbestad</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.nescivi.eu/">Marije Baalman</a></li>
+    <li class="teamMember"><a target="_blank" href="http://albertodecampo.net/">Alberto de Campo</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.woutersnoei.nl/">Wouter Snoei</a></li>
+    <li class="teamMember"><a target="_blank" href="http://tai-studio.org/">Till Bovermann</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.friendlyvirus.org/miguelnegrao/">Miguel Negrão</a></li>
+    <li class="teamMember"><a target="_blank" href="http://west28.nl/">Robert van Heumen</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.earweego.net/">Hannes Hoelzl</a></li>
+    <li class="teamMember"><a target="_blank" href="http://tim.klingt.org/">Tim Blechmann</a></li>
+    <li class="teamMember"><a target="_blank" href="http://ameliehinrichsen.de/">Amelie Hinrichsen</a></li>
+    <li class="teamMember"><a target="_blank" href="http://www.himalo.de/">Dominik Hildebrand Marques Lopes</a></li>
+    <li class="teamMember"><a target="_blank" href="http://http://tapage-sound.com/">Tijs Ham</a></li>
+</ul>
+</div>

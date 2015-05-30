@@ -36,7 +36,7 @@ body {
 
 
 .container {
-    font: 18px/27px 'SansationLight', Arial, sans-serif;
+    font: 18px/27px $base-font-family;
     width: 960px;
     background: #E4713C;
     background: rgba(200, 150, 145, 0.7);
