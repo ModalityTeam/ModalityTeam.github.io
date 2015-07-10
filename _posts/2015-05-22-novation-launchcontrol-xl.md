@@ -6,6 +6,7 @@ hwInterface: usb, MIDI
 vendorUrl: http://global.novationmusic.com/launch/launch-control-xl
 manual: http://global.novationmusic.com/support/product-downloads?product=Launch+Control+XL
 type: mixer
+hasScribble: true
 description: |
     A faderbox emulating the interface of a mixing desk
 features: |
@@ -13,6 +14,6 @@ features: |
     + 8 Faders (60mm)
     + 16 multi-colour backlit buttons
     + 8 backlit buttons
-    + 8 "user"-pages + 8 "factory"-pages
+    + 8 *user*-pages & 8 *factory*-pages
 ---
 
