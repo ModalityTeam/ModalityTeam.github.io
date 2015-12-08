@@ -13,12 +13,12 @@ MKtl.find; // explore what's available
 
 Access a [nanoKONTROL2]({% post_url 2015-05-22-korg-nanokontrol2 %}):
 {% highlight text %}
-k = MKtl('nnkn20'); // short name indicates NanoControl2
+k = MKtl('nk2', "korg-nanokontrol2"); // give it a short name, and tell it which description file to use
 {% endhighlight %}
 
 Assign an action to the first knob:
 {% highlight text %}
-k.elementAt(\kn, 0).action = { |el| el.value.postln }; 
+k.elAt(\kn, 0).action = { |el| el.value.postln }; 
 {% endhighlight %}
 
 Have a different controller? Just [look](controllers) if your device is one of the {{site.posts | size}} [supported ones](controllers).
