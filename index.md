@@ -13,7 +13,8 @@ MKtl.find; // explore what's available
 
 Access a [nanoKONTROL2]({% post_url 2015-05-22-korg-nanokontrol2 %}):
 {% highlight text %}
-k = MKtl('nk2', "korg-nanokontrol2"); // give it a short name, and tell it which description file to use
+// give it a short name, and tell it which description file to use
+k = MKtl('nk2', "korg-nanokontrol2"); 
 {% endhighlight %}
 
 Assign an action to the first knob:
