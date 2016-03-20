@@ -1,15 +1,21 @@
 ---
 layout: controllers
-title: Korg microKEY
-imageType: jpg
-type: keyboard
-vendorUrl: http://www.korg.com/us/products/controllers/microkey/
-hwInterface: usb, MIDI
+title: "KORG microKEY"
+hwInterface: "midi"
+vendorURI: "http://www.korg.com/us/products/controllers/microkey/"
+type: "midiKeyboard"
+imageFilename: "korg-microkey.jpg"
+description: |
+  A midiKeyboard midi device.
+
+
 features: |
-    + Velocity-sensitive mini-keyboard, three models:
-        - 25-key
-        - 37-key
-        - 61-key
+  + Velocity-sensitive mini-midiKeyboard
+  + three models: 25-key / 37-key / 61-key
+
+status: |
+  + *osx* -- unknown
+  + *linux* -- unknown
+  + *win* -- unknown
+
 ---
-
-

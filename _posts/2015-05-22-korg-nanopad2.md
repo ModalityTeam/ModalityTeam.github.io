@@ -1,10 +1,17 @@
 ---
 layout: controllers
-title: Korg nanoPAD2
-imageType: jpg
-type: pads, touchpad, buttons
-vendorUrl: http://www.korg.com/us/products/controllers/nanopad2/
-hwInterface: usb, MIDI
+title: "KORG nanoPAD 2"
+hwInterface: "midi"
+vendorURI: "http://www.korg.com/us/products/controllers/nanopad2/"
+type: "drumpad"
+imageFilename: "korg-nanopad2.jpg"
+description: |
+  A drumpad midi device.
+
+
+status: |
+  + *osx* -- unknown
+  + *linux* -- unknown
+  + *win* -- unknown
+
 ---
-
-

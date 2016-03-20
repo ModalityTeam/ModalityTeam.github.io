@@ -92,13 +92,19 @@ ul.controllers {
         list-style: circle; 
 }
 
-.controller-box {
+.controller-box, .usage-box{
     background-color: #F8DCC8;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 10px;
+    margin-top: 5px;
     min-height: 250px;
 }
 
+
+.usage-box {
+    margin-top: 5px;
+    min-height: 50px;
+}
 
 .controllerDescription {
     list-style: none;

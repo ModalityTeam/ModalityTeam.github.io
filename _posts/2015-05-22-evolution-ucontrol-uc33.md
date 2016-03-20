@@ -1,11 +1,16 @@
 ---
 layout: controllers
-title: Evolution UControl UC33
-imageType: jpg
-hwInterface: usb, MIDI
-descFile: UC-33
-type: sliders, knobs, buttons
+title: "Evolution U-Control UC33"
+hwInterface: "midi"
+type: "faderbox"
+imageFilename: "evolution-ucontrol-uc33.jpg"
+description: |
+  A faderbox midi device.
+
+
+status: |
+  + *osx* -- unknown
+  + *linux* -- unknown
+  + *win* -- unknown
+
 ---
-
-
-

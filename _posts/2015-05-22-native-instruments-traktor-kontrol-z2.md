@@ -1,10 +1,17 @@
 ---
 layout: controllers
-title: Native Instruments Traktor Kontrol Z2
-imageType: jpg
-hwInterface: usb, MIDI (HID-mode broken)
-type: mixer
-vendorUrl: http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/
----
+title: "Native Instruments Traktor Kontrol Z2"
+hwInterface: "midi"
+vendorURI: "http://www.native-instruments.com/en/products/traktor/dj-mixer/traktor-kontrol-z2/"
+type: "mixer"
+imageFilename: "native-instruments-traktor-kontrol-z2.jpg"
+description: |
+  A mixer midi device.
 
-<iframe src="https://player.vimeo.com/video/128798292?color=ff9933&portrait=0" width="300" height="168" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+status: |
+  + *osx* -- unknown
+  + *linux* -- unknown
+  + *win* -- unknown
+
+---

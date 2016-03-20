@@ -1,12 +1,19 @@
 ---
 layout: controllers
-title: Generic Mouse
-hwInterface: usb, HID
-type: relative pointer
-notes: Interface to a generic mouse.
+title: "Generic Mouse"
+hwInterface: "hid"
+type: "mouse"
+description: |
+  A mouse hid device.
+
+
 features: |
-    + 3 buttons
-    + scroll wheel
+  + 3 buttons
+  + scroll wheel
+
+status: |
+  + *osx* -- unknown
+  + *linux* -- unknown
+  + *win* -- unknown
+
 ---
-
-

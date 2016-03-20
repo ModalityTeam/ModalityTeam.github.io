@@ -28,12 +28,12 @@ layout: default
 </h2>
 <div class="controller-box" >
 
-    {% if page.imageType %}
+    {% if page.imageFilename %}
     <div class="boxControllerfig">
-        <a data-lightbox="controller" data-title="{{ page.title }} {% if page.hasScribble %}
+        <a data-lightbox="controller" data-title="{{ page.title }}     {% if page.hasScribble == true %}
         <a target=_blank href=/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf>(scribble)</a>
-    {% endif %}" href="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}">
-        <img class="controller" align="none" src="/img/controllers/{{ page.title | slugify }}.{{ page.imageType }}" />
+    {% endif %}" href="/img/controllers/{{ page.imageFilename }}">
+        <img class="controller" align="none" src="/img/controllers/{{ page.imageFilename }}" />
         </a>
     </div>
     {% endif %}
@@ -46,38 +46,52 @@ layout: default
 
 
 <ul class="controllerDescription">
+    {% if page.features %}
+    <li><b>Features</b>
+    {{ page.features | markdownify }}
+    </li>
+    {% endif %}
     {% if page.type %}
     <li><b>Type</b> {{ page.type }}</li>
     {% endif %}
     {% if page.hwInterface %}
     <li><b>Protocol</b> {{ page.hwInterface }}</li>
     {% endif %}
-    {% if page.vendorUrl %}
-    <li><b><a target="_blank" href= "{{ page.vendorUrl }}">Vendor info</a></b></li>
+    {% if page.vendorURI %}
+    <li><b><a target="_blank" href= "{{ page.vendorURI }}">Vendor info</a></b></li>
     {% endif %}
     {% if page.manual %}
     <li><b><a target="_blank" href= "{{ page.manual }}">Manual</a></b></li>
     {% endif %}
     <li><b><a target="_blank" href="https://github.com/ModalityTeam/Modality-toolkit/blob/master/Modality/MKtlDescriptions/{{ page.title | slugify }}.desc.scd">MKtl Description</a></b></li>
-    {% if page.hasScribble != null %}
+    {% if page.hasScribble == true %}
     <li><b>
     <a target="_blank" href="/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf">
             Scribble paper (pdf)</a></b>
     </li>
     {% endif %}
-    {% if page.features %}
-    <li><b>Features</b>
-    {{ page.features | markdownify }}
-    </li>
-    {% endif %}
 </ul>
-    {% if page.notes %}
-    <em>{{ page.notes | markdownify }}</em>
-    {% endif %}
-
-{{ content }}
 
 </div>
+
+{% if page.notes %}
+<div class="usage-box" >
+    {{ page.notes | markdownify }}
+</div>
+{% endif %}
+
+{% if page.status %}
+<div class="usage-box" >
+{{"Status" | markdownify }}
+    <div class="controllerDescription">{{ page.status | markdownify }}</div>
+</div>
+{% endif %}
+
+
+
+{% comment %}{{ content }}{% endcomment %}
+
+
 <p class="editDeclare">
 Something missing? Please <a target="_blank" href="{{ site.github.repository_url }}/edit/master{{ site.branch }}/{{ page.path }}">edit the page on GitHub</a> and send us a pull request!
 </p>
