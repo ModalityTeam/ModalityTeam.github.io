@@ -5,6 +5,7 @@ hwInterface: "midi"
 vendorURI: "http://www.doepfer.de/pe.htm"
 manual: "http://www.doepfer.de/pdf/PE_manual.pdf"
 type: "faderbox"
+imageFilename: "decampo-joybox.jpg"
 description: |
   Controller box with 8 XY joysticks, made w doepfer pocket-electronics kit.
 
