@@ -1,12 +1,12 @@
 ---
 layout: controllers
-title: "sensestage minibee1"
+title: "sensestage minibee1 xpree"
 hwInterface: "osc"
 vendorURI: "https://shop.sensestage.eu/product.php?id_product=11"
 type: "minibee"
-descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//sensestage-minibee1.desc.scd"
+descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//sensestage-minibee1-xpree.desc.scd"
 notes: |
-  This is the Sense/Stage MiniBee with the default configuration (1) of just the accelerometer
+  This is the Sense/Stage MiniBee with the XPree expansion board default configuration (3)
 
 
 description: |
@@ -14,7 +14,7 @@ description: |
 
 
 status: |
-  + *osx* -- tested and working, subset of sensors only. no date
+  + *osx* -- tested and working, subset of sensors only. no date?
   + *linux* -- tested (fake device only); 2016_03_20 by nescivi
   + *win* -- unknown
 
