@@ -30,8 +30,8 @@ layout: default
 
     {% if page.imageFilename %}
     <div class="boxControllerfig">
-        <a data-lightbox="controller" data-title="{{ page.title }}     {% if page.hasScribble == true %}
-        <a target=_blank href=/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf>(scribble)</a>
+        <a data-lightbox="controller" data-title="{{ page.title }}     {% if page.scribbleFilename %}
+        <a target=_blank href=/img/controller.scribble/{{ page.scribbleFilename }}>(scribble)</a>
     {% endif %}" href="/img/controllers/{{ page.imageFilename }}">
         <img class="controller" align="none" src="/img/controllers/{{ page.imageFilename }}" />
         </a>
@@ -64,9 +64,9 @@ layout: default
     <li><b><a target="_blank" href= "{{ page.manual }}">Manual</a></b></li>
     {% endif %}
     <li><b><a target="_blank" href="{{ page.descEditPath}}">MKtl Description</a></b></li>
-    {% if page.hasScribble == true %}
+    {% if page.scribbleFilename %}
     <li><b>
-    <a target="_blank" href="/img/controller.scribble/{{ page.title | slugify }}.scribble.pdf">
+    <a target="_blank" href="/img/controller.scribble/{{ page.scribbleFilename }}">
             Scribble paper (pdf)</a></b>
     </li>
     {% endif %}
@@ -93,6 +93,6 @@ layout: default
 
 
 <p class="editDeclare">
-Something missing? Please <a target="_blank" href="{{page.descEditPath}}">edit</a> the description on GitHub</a> and send us a pull request!
+Something missing? Please <a target="_blank" href="{{page.descEditPath}}">edit</a> the description on GitHub and send us a pull request!
 </p>
 

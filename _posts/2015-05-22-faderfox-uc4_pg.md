@@ -5,7 +5,8 @@ hwInterface: "midi"
 vendorURI: "http://faderfox.de/uc4.html"
 manual: "http://www.faderfox.de/PDF/UC4%20Manual%20V01.PDF"
 type: "faderbox"
-descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//faderfox_uc4/faderfox-uc4.desc.scd"
+imageFilename: "faderfox-uc4_pg.jpg"
+descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//faderfox_uc4/faderfox-uc4_pg.desc.scd"
 notes: |
   All controls (incl. push buttons) fully programmable in the device by channel, type, number.
 

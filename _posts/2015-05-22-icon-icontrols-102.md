@@ -1,12 +1,11 @@
 ---
 layout: controllers
-title: "icon icontrols"
+title: "icon icontrols 102"
 hwInterface: "midi"
 vendorURI: "http://icon-global.com/product/icontrols/"
 manual: "http://support.icon-global.com/hc/en-us/articles/216201337-iControls"
 type: "faderbox"
-imageFilename: "icon-icontrols.jpg"
-descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//icon-icontrols.desc.scd"
+descEditPath: "https://github.com/ModalityTeam/Modality-toolkit/tree/master/Modality/MKtlDescriptions//icon-icontrols-102.desc.scd"
 notes: |
   This is the main desc for MIDI port 1 of this device.
 
@@ -22,8 +21,8 @@ description: |
 
 
 status: |
-  + *osx* -- tested desc, looks ok.
-  + *linux* -- tested and working, 2016_03_20 by nescivi
+  + *osx* -- tested and working, adc, 2016-05-05.
+  + *linux* -- unknown
   + *win* -- unknown
 
 ---
