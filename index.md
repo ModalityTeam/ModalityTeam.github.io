@@ -3,7 +3,7 @@ layout: frontpage
 image: modality-teaser.jpg
 ---
 
-The Modality Toolkit simplifies creation of highly personalised electronic instruments in [SuperCollider](http://supercollider.github.org) by introducing a common code interface. This allows for *uniform access* to ```HID```, ```MIDI```, ```OSC``` and ```GUI```-based conrollers, as well as switching of functionality, even at runtime.
+The Modality Toolkit simplifies creation of highly personalised electronic instruments in [SuperCollider](http://supercollider.github.io) by introducing a common code interface. This allows for *uniform access* to ```HID```, ```MIDI```, ```OSC``` and ```GUI```-based conrollers, as well as switching of functionality, even at runtime.
 
 ## How does it work?
 
